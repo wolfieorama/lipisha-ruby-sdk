@@ -2,7 +2,11 @@
 
 This gem provides bindings for Lipisha Payments API (http://developers.lipisha.com)
 
-*****!!! Note that this package is in development. - It will be published on rubygems and this notice removed shortly**
+---
+
+**Note that this package is in development. - It will be published on rubygems and this notice removed shortly**
+
+---
 
 ## Installation
 
@@ -21,7 +25,7 @@ Or install it yourself as:
 ## Usage
 
 
-    ```
+    ```ruby
     require "lipisha/sdk"
 
     lipisha = Lipisha::Sdk::LipishaAPI.new("<YOUR API kEY>", "YOUR API SIGNATURE", "<ENVIRONMENT>")
