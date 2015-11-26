@@ -24,21 +24,20 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+require "lipisha/sdk"
 
-    ```ruby
-    require "lipisha/sdk"
+lipisha = Lipisha::Sdk::LipishaAPI.new("<YOUR API kEY>", "YOUR API SIGNATURE", "<ENVIRONMENT>")
+# Enviroment may either be _live_ for production environment or _test_ for the lipisha sandbox.
 
-    lipisha = Lipisha::Sdk::LipishaAPI.new("<YOUR API kEY>", "YOUR API SIGNATURE", "<ENVIRONMENT>")
-    # Enviroment may either be _live_ for production environment or _test_ for the lipisha sandbox.
-
-    response = lipisha.get_balance()
-    puts(response.status)
-    puts(response.status_code)
-    # This is a map of the content response
-    # See the Lipisha API documentation for available metadata
-    puts(response.content)
-    puts(response.json)
-    ```
+response = lipisha.get_balance()
+puts(response.status)
+puts(response.status_code)
+# This is a map of the content response
+# See the Lipisha API documentation for available metadata
+puts(response.content)
+puts(response.json)
+```
 
 ## Contributing
 
