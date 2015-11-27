@@ -2,7 +2,7 @@ require "test/unit"
 require "lipisha/sdk"
 require_relative "config"
 
-class BalanceTest < Test::Unit::TestCase
+class TransactionsTest < Test::Unit::TestCase
 
   def setup
     @lipisha = Lipisha::Sdk::LipishaAPI.new(API_KEY, API_SIGNATURE, API_ENVIRONMENT)
