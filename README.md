@@ -2,6 +2,10 @@
 
 This gem provides bindings for Lipisha Payments API (http://developers.lipisha.com)
 
+## Documentation
+
+http://www.rubydoc.info/github/lipisha/lipisha-ruby-sdk/master/Lipisha/Sdk/LipishaAPI
+
 ## Features
 
 - Send money
