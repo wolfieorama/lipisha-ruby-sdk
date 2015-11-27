@@ -2,11 +2,18 @@
 
 This gem provides bindings for Lipisha Payments API (http://developers.lipisha.com)
 
----
+## Features
 
-**Note that this package is in development. - It will be published on rubygems and this notice removed shortly**
-
----
+- Send money
+- Acknowledge transactions
+- Send SMS
+- Get Float
+- Get Balance
+- Charge card transactions
+- Search transactions
+- Search customers
+- Add users
+- Add payment accounts and withdrawal accounts
 
 ## Installation
 
@@ -37,7 +44,39 @@ puts(response.status_code)
 # See the Lipisha API documentation for available metadata
 puts(response.content)
 puts(response.json)
+
+# Sending money
+response = lipisha.send_money("039XXX", "0722123456", 200)
 ```
+
+## IPN Examples
+
+IPN Integration examples for Rails are in the examples directory
+
+https://github.com/lipisha/lipisha-ruby-sdk/tree/master/examples
+
+## Running Tests
+
+Edit the test configuration in `test/config.rb`
+
+Run all tests
+
+```shell
+bundle exec rake
+```
+
+Run a particular test
+
+```
+bundle exec rake TEST=test/<filename>
+```
+
+e.g. Balance tests
+
+```
+ bundle exec rake TEST=test/test_balance
+```
+
 
 ## Contributing
 
