@@ -9,7 +9,7 @@ class TransactionsTest < Test::Unit::TestCase
   end
 
   def test_get_transactions
-    response = @lipisha.get_transactions(transcation_amount_minimum=10.0,
+    response = @lipisha.get_transactions(transaction_amount_minimum=10.0,
                                          transaction_amount_maximum=200.0)
     puts(response)
     assert_not_nil response
