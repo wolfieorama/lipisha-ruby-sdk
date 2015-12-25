@@ -9,21 +9,19 @@ IPN: Instant Payment Notification
 
 ## Usage
 
-The bulk of the logic happens in the IPN controller.
-
-    https://github.com/lipisha/lipisha-ruby-sdk/tree/master/examples/app/controllers/ipn_controller.rb
+The bulk of the logic happens in the [IPN Controller](https://github.com/lipisha/lipisha-ruby-sdk/tree/master/examples/app/controllers/ipn_controller.rb).
 
 For production usage, handling IPN callbacks should be mapped to records in permanent storage.
 
-Adjust the controller settings to load your *API_KEY* and *API_SIGNATURE*.
+Adjust the controller settings to load your `API_KEY` and `API_SIGNATURE`.
 
 
 ## Running
 
-Make sure you have *Ruby* and the *bundle* gem installed
+Make sure you have `Ruby` and the `bundler` gem installed
 
 ```shell
-gem install bundle
+gem install bundler
 bundle install
 ./bin/rails server
 ```
