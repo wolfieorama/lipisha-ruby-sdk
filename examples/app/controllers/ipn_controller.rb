@@ -1,7 +1,9 @@
 class IpnController < ApplicationController
 
-  API_KEY = ENV["LIPISHA_API_KEY"]
-  API_SIGNATURE = ENV["LIPISHA_API_SIGNATURE"]
+  API_KEY = 'e0558566d0381997ba5c4480176d19ce'
+  #ENV["LIPISHA_API_KEY"]
+  API_SIGNATURE = 'RMhSnT/KlGQiNL2/5D2tH1a6ovf8lpqhExIxOfcjvtuqtpK8n6gPgmowrFoZtFGhj7USsnTIe/7F48tgxq/HrwQ5siphD8u58HOKzQMtzENvaU1+K36RWvVFmRSyME9UeHAUx/GxUGXS3ddE0n9/i3THhb4JVZsn88K4bQ2vvpM='
+  #ENV["LIPISHA_API_SIGNATURE"]
   API_VERSION = "1.3.0"
   ACTION_INITIATE = "Initiate"
   ACTION_ACKNOWLEDGE = "Acknowledge"
@@ -35,7 +37,7 @@ class IpnController < ApplicationController
       elsif (api_type=ACTION_ACKNOWLEDGE)
         # Lipisha acknowledges the transaction
         # At this point we can update our records confirming that the cash has actually been received.
-        
+
         transaction_reference = params["transaction_reference"]
         transaction_status = params["transaction_status"]
         transaction_status_code = params["transaction_status_code"]
